@@ -16,6 +16,7 @@ header {
     width: 100%;
     background-color: #fff;
     border: 2px solid #402315;
+    z-index: 1;
 }
 
 .heading {
@@ -66,14 +67,19 @@ header {
 
 #home {
     background-image: url(/image/yayasan-home.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
+    z-index: 2;
+}
+
+#home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 #home h1 {
@@ -312,6 +318,7 @@ footer h3 {
 @media only screen and (max-width: 900px) {
     #home {
         background-position: center;
+        width: 1000px;
     }
 
     #home h1 {
@@ -360,4 +367,4 @@ footer h3 {
     footer section {
         height: 18vh;
     }
-}
+} 
