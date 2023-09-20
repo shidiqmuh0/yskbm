@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #402315;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    margin: 1%;
+    justify-content: center;
+}
+
+.heading ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    list-style-type: none;
+}
+
+.heading a {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+
+.heading a:hover {
+    color: #e67d26;
+}
+
+.heading-kontak {
+    border: 2px #e67d26 solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.heading-kontak:hover {
+    background-color: #e67d26;
+}
+
+.heading-kontak a {
+    color: #e67d26;
+}
+
+.heading-kontak a:hover {
+    color: white;
+}
+
+#home {
+    background-image: url(/image/yayasan-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#home h1 {
+    color: #e67d26;
+    text-shadow: -5px 0px 0px #402315;
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+#visi {
+    background-color: white;
+    padding: 20vh;
+}
+
+#visi h1 {
+    text-align: center;
+    margin: 5vh;
+}
+
+.visi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.visi img {
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 30px 0px 0px #e67d26;
+}
+
+.visi p {
+    width: 300px;
+    font-size: 24px;
+}
+
+#misi {
+    background-image: url(/image/bg.png);
+    background-size: 100px;
+    background-repeat: repeat;
+    padding: 20vh;
+}
+
+.misi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.misi h1 {
+    color: white;
+    margin: 5vh;
+}
+
+.misi img {
+    width: 600px;
+    box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.7);
+}
+
+.misi ol {
+    width: 800px;
+}
+
+.misi ol li {
+    margin: 15px;
+    font-size: large;
+    color: white;
+}
+
+#program {
+    padding: 20vh;
+}
+
+#program h1 {
+    text-align: center;
+    margin: 5vh;
+}
+
+#program .program-text h1 {
+    margin: 1vh;
+}
+.program-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.program {
+    background-color: #e67d26;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.program-text {
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.program-text p {
+    margin: 5px;
+}
+
+#profile {
+    background-image: url(/image/bg.png);
+    background-size: 100px;
+    background-repeat: repeat;
+    padding: 20vh;
+    color: white;
+}
+
+#profile h1 {
+    text-align: center;
+    margin: 5vh;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile img {
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 30px 0px 0px #402315;
+}
+
+.profile p {
+    width: 300px;
+    font-size: 24px;
+}
+
+#kontak {
+    padding: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#kontak h1 {
+    margin: 5vh;
+}
+
+.kontak {
+    background-color: #402315;
+    width: 60vw;
+    border-radius: 10px;
+}
+
+form {
+    width: 90%;
+    margin: 5vh;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+}
+
+input {
+    color: #402315;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+textarea {
+    padding: 20px;
+}
+
+input[type="submit"] {
+    background-color: #e67d26;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: #e67d26;
+    border: 2px solid#e67d26;
+}
+
+footer {
+    background-color: #e67d26;
+    color: white;
+}
+
+footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+    height: 30vh;
+}
+
+.footer {
+    margin: 30px;
+    width: 25%;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+footer h3 {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ukuran Tablet */
+@media only screen and (max-width: 900px) {
+    #home {
+        background-position: center;
+    }
+
+    #home h1 {
+    font-size: 52px;
+        text-shadow: -3px 0px 0px #402315;
+    }
+
+    #visi {
+        padding: 28vh;
+    }
+
+    #misi {
+        padding: 10vh;
+    }
+
+    .misi ol {
+        padding-left: 50px;
+    }
+
+    #program {
+        padding: 10vh;
+    }
+
+    #program h1 { margin: 5vh;}
+
+    .program-text {
+        align-items: baseline;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    #program .program-text h1 {
+        margin: 1vh;
+    }
+
+    #profile {
+        padding: 28vh;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    width: 90%;
+    }
+
+    footer section {
+        height: 18vh;
+    }
+}
