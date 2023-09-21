@@ -315,14 +315,12 @@ footer h3 {
 }
 
 /* Ukuran Tablet */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 820px) {
     #home {
-        background-position: center;
-        width: 1000px;
+        width: 820px;
     }
-
     #home h1 {
-    font-size: 52px;
+        font-size: 52px;
         text-shadow: -3px 0px 0px #402315;
     }
 
@@ -332,14 +330,16 @@ footer h3 {
 
     #misi {
         padding: 10vh;
+        width: 820px;
     }
 
     .misi ol {
-        padding-left: 50px;
+        margin-left: 30px;
     }
 
     #program {
         padding: 10vh;
+        width: 820px;
     }
 
     #program h1 { margin: 5vh;}
@@ -356,6 +356,11 @@ footer h3 {
 
     #profile {
         padding: 28vh;
+        width: 820px;
+    }
+
+    #kontak {
+        width: 820px;
     }
 
     input[type="text"],
@@ -364,7 +369,35 @@ footer h3 {
     width: 90%;
     }
 
+    footer {
+        width: 820px;
+    }
+
     footer section {
         height: 18vh;
     }
-} 
+} @media only screen and (max-width: 600px) {
+    .heading-navigasi {
+        /* visibility: hidden; */
+    }
+
+    .heading-kontak {
+        /* visibility: hidden; */
+    }
+
+    #home, #visi, #misi, #profile, #kontak {
+        height: 200vh;
+    }
+
+    #visi {
+        margin: 200px;
+    }
+
+    .kontak {
+        width: 120vw;
+    }
+
+    footer section {
+        height: 20vh;
+    }
+}
